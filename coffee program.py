@@ -20,6 +20,8 @@ def check_reseller(option):
 
 data = {}
 lst = []
+
+print("\t\t\t\t\tWelcome to use Sydney Coffee Program")
 while True:
     name = input("Enter the customer's name: ")
     quantity = pyip.inputInt(prompt="Enter the number of coffee beans bags(bag/1kg): ", min=1,max = 200)
@@ -45,8 +47,7 @@ print("*********************************************************************")
 print("\t\tSales Summary")
 print("*********************************************************************")
 print( "Name\t\tNo of bags\tReseller\t\tTotal")
-#c = "center aligned"
-#print(f"{c.center(30)}")
+
 for name,quantity,option,total in data.values():
     print(f'{name.ljust(15)}\t{quantity}\t\t {option.ljust(8)}\t\t {round(total,2)}')
     name_list.append(name)
