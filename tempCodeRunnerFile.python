@@ -1,0 +1,8 @@
+from selenium import webdriver
+from lxml import html
+from time import sleep
+
+driver = webdriver.Edge("C:/Program Files (x86)/msedgedriver.exe")
+driver.get('https://hamrobazaar.com/i2929564-house-for-sale-at-basundhara-ktm.html')
+sleep(1)
+driver.close()
