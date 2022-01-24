@@ -3,8 +3,8 @@ from lxml import html
 from time import sleep
 
 
-driver = webdriver.Edge("C:/Program Files (x86)/msedgedriver.exe")
-for i in range(0,200,10):
+driver = webdriver.Chrome("C:\Program Files (x86)\chromedriver.exe")
+for i in range(0,20,10):
     driver.get('https://hamrobazaar.com/c112-real-estate?catid=112&order=popularad&offset={}'.format(i))
     driver.execute_script('window.scrollTo(0,document.body.scrollHeight);')
     sleep(1)
